@@ -1,0 +1,1 @@
+Describe your book in blurb.md in *Markdown* or in blurb.tex in *tex*

@@ -1,0 +1,110 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                              %%%
+%%%     Language Science Press Master File       %%%
+%%%         follow the instructions below        %%%
+%%%                                              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+% Everything following a % is ignored
+% Some lines start with %. Remove the % to include them
+
+\documentclass[output=coverbod% long|short|inprep              
+%   	        ,draftmode 
+%  ,draft
+  	        ,nonflat
+  	        ,modfonts
+		,smallfont
+% 		,colorlinks
+%  	        ,newtxmath
+		  ]{langsci/langscibook}    
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                              %%%
+%%%          additional packages                 %%%
+%%%                                              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+\input{localmetadata.tex}
+\input{localpackages.tex}
+\input{localhyphenation.tex}
+\input{localcommands.tex} 
+\bibliography{localbibliography}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                              %%%
+
+%%%             Frontmatter                      %%%x
+%%%                                              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \includeonly{%
+% chapters/preface,
+% chapters/acknowledgments,
+% chapters/abbreviations,
+% chapters/conventions,
+% chapters/maps,
+% chapters/01,
+% chapters/02,
+% chapters/03,
+% chapters/04,
+% chapters/05,
+% chapters/06,
+% chapters/07,
+% chapters/08,
+% chapters/09,
+% chapters/10,
+% chapters/11,
+% chapters/12,
+% chapters/13,
+% chapters/14,
+% chapters/AA,
+% chapters/AB, 
+% chapters/AC,
+% chapters/AD,
+% chapters/AE,
+% chapters/AF%
+% }
+\begin{document}       
+\maketitle                
+\frontmatter
+
+ 
+% %% uncomment if you have preface and/or acknowledgements 
+
+\currentpdfbookmark{Contents}{name} % adds a PDF bookmark
+\tableofcontents 
+%
+ 
+% \exewidth{(123)} % make all examples start at the left hand margin.
+ 
+  \include{chapters/preface}
+  \include{chapters/acknowledgments}
+  \include{chapters/abbreviations}
+  \include{chapters/conventions} 
+  \include{chapters/maps}
+
+\mainmatter     
+ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                              %%%
+%%%             Chapters                         %%%
+%%%                                              %%%x
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+%   
+% 
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                              %%%
+%%%             Backmatter                       %%%
+%%%                                              %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ 
+{\sloppy
+\input{backmatter.tex}
+}
+\end{document} 
+ 

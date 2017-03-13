@@ -1,0 +1,42 @@
+%\documentclass{article}
+%
+%\usepackage{tikz}
+%\usetikzlibrary{calc}
+%\usetikzlibrary{positioning}
+%\usetikzlibrary{fit}
+%
+%\begin{document}
+
+\begin{tikzpicture}[baseline, on grid=true]
+\node at (0,0) (ol) {};
+\node [right=6cm of ol] (or) {};
+\node [below right=4.5cm and 1cm of ol] (ul) {};
+\node [below=4.5cm of or] (ur) {};
+
+\draw (ol.center) -- (or.center) -- (ur.center) -- (ul.center) -- (ol.center);
+
+\node[below right=\baselineskip and 0.6cm of ol] (i) {i};
+\node[below left=\baselineskip and .25cm of or](u) {u};
+\node[below left=\baselineskip and .5cm of u](U) {ʊ};
+\node[below right=\baselineskip and .75cm of i] (I) {ɪ};
+\node[below right=2\baselineskip and .5cm of i](e) {e};
+\node[right=2.25cm of e](E) {ə};
+\node[right=2.25cm of E.west](o) {o};
+\node[below right=2\baselineskip and .5cm of e](eps) {ε};
+\node[right=4cm of eps](oo) {ɔ};
+\node[below left=\baselineskip and .5cm of oo](ool) {\textlowering{ɔ}};
+\node[below right=\baselineskip and .5cm of eps](epsl) {\textlowering{ε}};
+
+\node[above right=.5\baselineskip and 1.5cm of ul](a) {a};
+\node[above right=\baselineskip and 1.25cm of a](A) {ɐ};
+
+\node[draw=black, inner sep=0pt, thick, ellipse, rotate fit=135, fit=(i) (I) (e)] {};
+\node[draw=black, inner sep=0pt, thick, ellipse, fit=(u) (U) (o)] {};
+\node[draw=black, inner sep=0pt, thick, ellipse, rotate fit=120, fit=(E) (eps) (epsl)] {};
+\node[draw=black, inner sep=0pt, thick, ellipse, fit=(a) (A)] {};
+\node[draw=black, inner sep=0pt, thick, ellipse, fit=(oo) (ool)] {};
+
+
+\end{tikzpicture}	
+%
+%\end{document}

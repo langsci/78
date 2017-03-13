@@ -1,0 +1,254 @@
+accompaniment
+additive plural interpretation
+adnominal possession
+adnominal possessive construction
+adnominal possessive relation
+adnominal use
+adverbial modification
+adverbial use
+adverb
+adversative
+affinal kin
+affirmation
+affixation
+aimlessness
+allomorphy
+alternative question
+anaphoric use
+anteriority
+apostrophe
+apposition
+appositional construction
+aspectual adverb
+assimilation
+associative
+associative plural
+attenuation
+attributive function
+basic word order
+benefaction
+beneficiary relation
+bivalent
+cardinal numeral
+causal
+causative
+centralization
+classifying noun
+collectivity
+collocation
+comitative
+comma intonation
+common noun
+communicative event
+comparative clause
+complementizer
+compounding
+compound
+concessive
+condition
+conditional
+conjunction
+conjunctive
+consanguineal kin
+consonant inventory
+consonant sequence
+consonant system
+constituent combining
+content question
+content word
+continuation
+data analysi
+data transcription
+definite
+degree adverb
+degree-marking
+demographic information
+demonstrative stacking
+demonstrative
+devoicing
+dialect situation
+different-type constituent
+direct speech
+direction noun
+directive clause
+discontinuous reciprocal
+discourse deictic use
+disjunctive
+distributive numeral
+distributive quantifier
+double-object
+elision
+emotional involvement
+existential clause
+figurative locational use
+focus adverb
+focused elicitation
+fortition
+frequency adverb
+full reduplication
+function word
+genetic affiliation
+gesamtbedeutung
+goal-oriented
+grading
+grammaticality judgment
+grammaticalization
+hesitation marker
+historically derived
+hortative
+identificational use
+identity-marking
+imitation
+imitative reduplication
+immediacy
+imperative
+inclusory conjunction construction
+inclusory plural interpretation
+indefinite
+indefiniteness
+intensification
+intensifying function
+intensity
+interjection
+interpretational shift
+interrogative clause
+interrogative
+intransitive clause
+juxtaposition
+kinship term
+language attitude
+language use
+lengthening
+lenition
+lexeme formation
+lexeme interpretation
+lexical causative
+lexical reciprocal
+lexical root
+linguistic setting
+literacy rate
+loan word
+locational
+locative
+lowering
+marked polar question
+methodological approach
+mid-range quantifier
+modal adverb
+modification
+MOD-N structure
+monovalent
+morphological propertie
+morphology
+nasalization
+negation
+negative clause
+N-MOD 
+MOD-N structure
+N-MOD structure
+nominal base
+nominal predicate clause
+nominal use
+non-canonical
+nonlocational prepositional clause
+non-native segment
+nonverbal clause subject
+nonverbal clause
+noun phrase
+noun
+numeral base
+numeral predicate clause
+numeral
+obligation
+one-argument existential clause
+onomatopoeia
+oppositive
+ordinal numeral
+orthographic convention
+palatalization
+Papuan contact zone
+Papuan Malay corpu
+partial reduplication
+periphrastic causative
+phonetic processe
+phonological processe
+phonology
+phonotactic
+phrasal expression
+placeholder use
+placeholder
+polar question
+possessor noun phrase
+possessum noun phrase
+posteriority-marking
+predicative function
+prepositional phrase
+prepositional predicate clause
+preposition
+prohibitive
+pronominal use
+pronoun
+proper noun
+psychological use
+purposive
+quantifier base
+quantifier predicate clause
+quantifier
+reciprocal clause
+reciprocal construction
+reciprocity marker
+recorded text
+recursive
+reduplication
+relative time
+relativizer
+repetition
+reported speech
+research location
+resultative
+rhetorical figures of speech
+R-type oblique
+same-type constituent
+segment inventory
+sequential
+similarity
+simple reciprocal
+situational use
+socio-historical study
+sociolinguistic profile
+sociolinguistic study
+spatial use
+speaker number
+speaker sample
+stress pattern
+summary conjunction
+syllable structure
+syntactic causative
+syntactic reciprocal
+tag
+temporal adverb
+temporal use
+textual anaphoric use
+textual use
+time unit
+time-denoting noun
+topic-comment construction
+transitive clause
+trivalent
+two-argument existential clause
+typological profile
+universal quantifier
+unmarked polar question
+valency
+variation
+verbal base
+verbal clause
+verb
+vividness
+vowel inventory
+vowel sequence
+vowel system
+word class membership
+word classe
+word list
+word-formation

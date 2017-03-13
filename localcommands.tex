@@ -1,0 +1,172 @@
+%add all your local new commands to this file
+%\newfontfamily\charis[Ligatures=TeX]{Charis SIL}
+
+\newcommand{\smiley}{:)}
+\newcommand{\textstyleunicode}{}
+\newcommand{\bluebold}[1]{\textbf{#1}}
+\newcommand{\blueboldUnderl}[1]{\textbf{\uline{#1}}} % for use in examples
+\newcommand{\blueboldSmallCaps}[1]{\textsc{\bluebold{#1}}}
+\newcommand{\textscItalBold}[1]{\textbf{\textit{\textsc{#1}}}}
+\newcommand{\textscItal}[1]{\textit{\textsc{#1}}}
+\newcommand{\textscBold}[1]{\textbf{\textsc{#1}}}
+\newcommand{\textstyleChBold}[1]{\textbf{#1}}
+%\newcommand{\textstyleChCharisSIL}[1]{\fontsize{9.5}{1}{\charis{#1}}}
+%\newcommand{\textstyleChCharisSILBlueBold}[1]{\bluebold{\textstyleChCharisSIL{#1}}}
+%\newcommand{\textstyleChCharisSILUnderl}[1]{\uline{\textstyleChCharisSIL{#1}}}
+%\newcommand{\textstyleChCharisSILviiivpt}[1]{\fontsize{8.5}{1}{\charis{#1}}}
+%\newcommand{\textstyleChItalic}[1]{\textit{#1}}
+%LangSci don't want CharisSIL fonts.
+\newcommand{\textstyleChCharisSIL}[1]{{#1}}
+\newcommand{\textstyleChCharisSILBlueBold}[1]{\bluebold{#1}}
+\newcommand{\textstyleChCharisSILUnderl}[1]{\uline{#1}}
+\newcommand{\textstyleChCharisSILviiivpt}[1]{{#1}}
+\newcommand{\textstyleChItalic}[1]{\textit{#1}}
+
+\newcommand{\textstyleChSmallCaps}[1]{\textsc{#1}}
+\newcommand{\textstyleChBlueBold}[1]{\bluebold{#1}}
+\newcommand{\textstyleChItalBold}[1]{\textit{\textbf{#1}}}
+\newcommand{\textstyleChUnderl}[1]{\uline{#1}}
+\newcommand{\textstyleExampleSource}[1]{\small{#1}}
+\newcommand{\textitbfxivpt}[1]{\fontsize{14pt}{1}{\textit{\textbf{#1}}}}
+\newcommand{\printdateextralabel}{\printdateextra}
+
+%\newcommand{\Tilde}{\~{}} % introduced by current cls
+\let\Tilde\textasciitilde
+%\newcommand{\textitbf}[1]{\textit{\textbf{#1}}}
+\newcommand{\textitbf}[1]{\textit{#1}} %Angela wanted PM in the text to be just italic.
+\newcommand{\textitbfUndl}[1]{\textit{\uline{#1}}}
+\newcommand{\squarebrackets}[1]{\symbol{"5B}{#1}\symbol{"5D}} % []
+\newcommand{\leftsquarebracket}{\symbol{"5B}}
+\newcommand{\rightsquarebracket}{\symbol{"5D}}
+\newcommand{\sidewaystext}[1]{\begin{sideways}#1\end{sideways}}
+%\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+%\renewcommand{\SI}[1]{{#1}} % \SI doesn't work with MikTeX, but crashes it because of a deprecated font command of \rm
+%\newcommand{\percent}{\%} 
+
+\newenvironment{styleBookTitlexvipt}{\begin{LARGE}}{\end{LARGE}} %We use LARGE (17pt font)/
+\newenvironment{styleCapFigure}{\begin{normalsize}}{\end{normalsize}}
+\newenvironment{styleCapFigurexvafter}{\begin{normalsize}}{\end{normalsize}} % Ignoring spaces after as figures are floating objects.
+\newenvironment{stylecaption}{\begin{caption}}{\end{caption}}
+\newenvironment{styleCaptionxbefore}{\begin{normalsize}}{\end{normalsize}} % Ignoring spaces before as tables are floating objects.
+\newenvironment{styleCaptionxivptSpace}{\begin{normalsize}}{\end{normalsize}} % Ignoring line spacing pro tem - we'll see what LaTeX does.
+\newenvironment{styleCitaviBibliographyEntry}{\begin{normalsize}}{\end{normalsize}} % leave as is - we expect BibTeX to do the formattiong.
+\newenvironment{styleDedication}{\begin{dedication}}{\end{dedication}} % 14 pt
+\newenvironment{styleExampleNumCard}{\begin{normalsize}}{\end{normalsize}}
+%\newenvironment{styleExampleTitle}{\begin{normalsize}\indent\\}{\end{normalsize}}
+\newenvironment{styleIIndented}{\begin{quotation}} % We use the quotation style instead as per LangSci
+{\end{quotation}}
+\newenvironment{styleExampleTitle}%
+  {
+  \needspace{3\baselineskip}
+%   \vspace{\baselineskip}
+\medskip
+%   \hspace*{5mm}
+  \begin{adjustwidth}{11mm}{}
+  \begin{flushleft}   
+  }{
+  \end{flushleft}
+  \end{adjustwidth} 
+}
+\newenvironment{styleFigure}{\begin{normalsize}}{\end{normalsize}}
+\newenvironment{styleFreeTranslEng}{\begin{normalsize}}{\end{normalsize}}
+\newenvironment{styleFreeTranslAlphaEng}{\begin{normalsize}}{\end{normalsize}}
+\newenvironment{styleIvptafter}{\begin{normalsize}}{\end{normalsize}}
+\newenvironment{styleIviptafter}{\begin{normalsize}}{\end{normalsize}}
+\newenvironment{styleIvvptafter}{\begin{normalsize}}{\end{normalsize}}
+\newenvironment{styleOvNvwnext}{\begin{normalsize}}{\end{normalsize}}
+\newenvironment{styleOvNvwnextxvbefore}{\begin{normalsize}}{\end{normalsize}}
+\newenvironment{styleIiI}{\setlength{\leftskip}{1cm}}{\setlength{\leftskip}{0cm}}
+\newenvironment{styleIiiI}{\setlength{\leftskip}{1cm}}{\setlength{\leftskip}{0cm}}
+\newenvironment{styleIvI}{\setlength{\leftskip}{1cm}}{\setlength{\leftskip}{0cm}}
+
+\let\arraybslash\arraybackslash
+
+\newcommand{\textItBoSc}[1]{\textit{\bfseries\scshape #1}}
+% To fix a BibLaTeX bug
+\makeatletter
+\def\blx@maxline{77}
+\makeatother
+
+%to fix another problem with the bibliography - do nothing
+\newcommand{\bbl}[1]{#1}
+
+%Counters for enumeration in tables
+\newcounter{InTableCounter0}[table]
+\newcounter{InTableCounter1}[InTableCounter0]
+\newcounter{ItemCounter} %  A counter for our convenience to remember counts.
+\newcounter{ItemCounter1}
+
+% Plots
+
+\pgfplotsset{
+	klugeaxis/.style={
+		ybar,
+%		x tick label as interval=true,
+		width=\textwidth,
+		ylabel={Speakers (\textsc{spk})},
+		xlabel={Topics (\textsc{t}) and interlocutors (\textsc{i})},					
+		xtick={1,2,...,8},
+		xticklabels={\textsc{t:pol},\textsc{t:edc},\textsc{t:rel},\textsc{t:low},\textsc{i:+stat}, \textsc{i:-stat}, \textsc{i:outsd}, \textsc{total}},
+%		plot box ratio=1 0.5,
+		y=1.5,
+		xtick=data,
+		ymin=0,
+		nodes near coords, nodes near coords align={vertical},
+		legend pos=north west,
+		area legend,
+		xlabel near ticks,
+%		bar shift=0pt,
+		ymajorgrids,
+		enlarge y limits={abs=4\baselineskip, upper}
+		},
+	klugedots/.style={pattern=dots},
+	klugelines/.style={pattern=north west lines}
+}	
+
+\newcommand{\biberror}[1]{{\color{red}#1}}
+
+\newcommand\fauxsc[1]{\fauxschelper#1 \relax\relax}
+\def\fauxschelper#1 #2\relax{%
+  \fauxschelphelp#1\relax\relax%
+  \if\relax#2\relax\else\ \fauxschelper#2\relax\fi%
+}
+\def\Hscale{.85}\def\Vscale{.74}\def\Cscale{1.12}
+\def\fauxschelphelp#1#2\relax{%
+  \ifnum`#1>``\ifnum`#1<`\{\scalebox{\Hscale}[\Vscale]{\uppercase{#1}}\else%
+    \scalebox{\Cscale}[1]{#1}\fi\else\scalebox{\Cscale}[1]{#1}\fi%
+  \ifx\relax#2\relax\else\fauxschelphelp#2\relax\fi}
+  
+  
+
+\renewcommand{\textscItalBold}[1]{\textbf{\textit{\fauxsc{#1}}}}
+\renewcommand{\textscItal}[1]{\textit{\fauxsc{#1}}}
+
+%\newcommand{\citegens}[2][]  % \citegen that deals with the s' after a name ending in s
+%     {\IfEndWith{\meaning\citeauthor{#2}}{4} 
+%          {\citeauthor{#2}' (\citeyear[#1]{#2})} % Author ends with an s
+%          {\citegen[#1]{#2}} % Author does not end with an s
+%     }
+
+\newcommand{\citegens}[2][]{{\citeauthor{#2}' (\citeyear[#1]{#2})}}
+
+\newcommand{\textupsc}[1]{\textup{\textsc{#1}}}
+
+\newcommand{\tablevspace}{\\[-.5em]}
+ 
+
+
+\renewcommand{\ili}[1]{#1\il{#1}} %to avoid line breaks in table 1.2
+
+\newcommand{\BER}{\textit{\footnotesize BER}}
+\newcommand{\TER}{\textit{\footnotesize TER}}
+\newcommand{\PEN}{\textit{\footnotesize PE(N)}}
+
+
+\newcommand{\aktab}[5]{ %#1 #2 #3}
+\begin{tabbing}
+xxxxxxxxxxxx \= xxxxxxxxxxxxxxxxxxxxxxx\kill 
+ \parbox{6cm}{\textit{#1}\\#2\\} \>\parbox{9cm}{\gll #3\\
+ #4\\
+ \glt #5}
+\end{tabbing}
+}
